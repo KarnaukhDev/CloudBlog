@@ -5,9 +5,116 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    position: fixed;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+a {
+    text-decoration: none;
+}
+.sidebar-text {
+    font-size: 20px;
+    font-weight: lighter;
+}
+.header-text {
+    font-size: 30px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    color: black;
+}
+
+.header {
+    height: 5vh;
+    text-align: center;
+}
+.wrapper {
+    display: flex;
+    width: 100vw;
+}
+.left-sidebar {
+    width: 20vw;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.left-sidebar:after {
+    content: "";
+    background: black;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 20vh;
+    width: 1px;
+}
+.router-view {
+    width:60vw;
+    height: 90vh;
+    padding: 0 5vh;
+    overflow-y: scroll;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: #ffffff;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #000000;
+}
+.right-sidebar {
+    width: 20vw;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.right-sidebar:after {
+    content: "";
+    background: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20vh;
+    width: 1px;
+}
+
+.post {
+    margin: 5vh 0;
+}
+.post-title {
+    text-align: start;
+}
+.post-body {
+    text-align: justify;
+    line-height: normal;
+    font-size: 18px;
+    font-weight: lighter;
+}
+.images-block {
+    display: flex;
+    flex-direction: row;
+}
+.images-preview {
+    display: inline;
+    text-align: start;
+    width: 30vw;
+}
+.preview-image {
+    width: 12vw;
+    object-fit: fill;
+    padding: 5px;
+}
+.additional-info {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+}
+.post-date {
+    text-align: end;
 }
