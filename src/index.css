@@ -85,14 +85,14 @@ a {
 }
 
 .post {
-    margin: 5vh 0;
+    margin: 7vh 0;
 }
 .post-title {
     text-align: start;
 }
 .post-body {
     text-align: justify;
-    line-height: normal;
+    line-height: 25px;
     font-size: 18px;
     font-weight: lighter;
 }
@@ -109,6 +109,7 @@ a {
     width: 12vw;
     object-fit: fill;
     padding: 5px;
+    cursor: pointer;
 }
 .additional-info {
     display: flex;
@@ -117,4 +118,9 @@ a {
 }
 .post-date {
     text-align: end;
+}
+.more {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
 }
